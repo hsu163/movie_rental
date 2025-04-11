@@ -1,0 +1,215 @@
+/* Dark theme base */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #121212 0%, #1a1a1a 100%);
+    padding: 20px;
+}
+
+/* Card styling */
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    background: #1e1e1e;
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid #333;
+    animation: fadeIn 0.6s ease-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #ff8a00, #e52e71, #00b4d8);
+    z-index: -1;
+    border-radius: 14px;
+    animation: borderAnimation 4s linear infinite;
+    background-size: 400%;
+}
+
+@keyframes borderAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Header */
+.login-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.login-header h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.subtitle {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+/* Form elements */
+.form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #ddd;
+    font-size: 0.9rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #444;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-bottom-color: #00b4d8;
+}
+
+.input-underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #00b4d8, #e52e71);
+    transition: width 0.4s ease;
+}
+
+.form-input:focus ~ .input-underline {
+    width: 100%;
+}
+
+/* Button */
+.login-button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(90deg, #00b4d8, #e52e71);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 180, 216, 0.3);
+}
+
+.login-button.loading {
+    background: #333;
+    color: transparent;
+}
+
+.spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Footer */
+.login-footer {
+    margin-top: 1.5rem;
+    text-align: center;
+    color: #bfb7b7;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.login-footer a {
+    color: #00b4d8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login-footer a:hover {
+    color: #6c394c;
+}
+
+
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Add this to your existing CSS */
+.login-container {
+    padding-top: 100px; /* Creates space below fixed navbar */
+    min-height: calc(100vh - 100px); /* Ensures full viewport coverage */
+}
+
+/* If using fixed navbar */
+.navbar.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+/* Animation adjustment */
+.login-card {
+    margin-top: 40px; /* Additional space below navbar */
+    animation: fadeIn 0.6s ease-out both;
+    animation-delay: 0.2s; /* Slight delay for better visual flow */
+}
+
+.text-gradient-link {
+ 
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    font-style: italic;
+    text-decoration: underline;
+    background-clip: text;
+    -webkit-background-clip: text;
+   
+    
+  }
+  
+  

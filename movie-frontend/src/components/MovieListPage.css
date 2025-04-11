@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+
+/* Add this to your CSS */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.movie-list-container {
+  min-height: 100vh;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box; /* Includes padding in width calculation */
+}
+
+.movie-collection {
+  font-family: 'Montserrat', sans-serif;
+  word-spacing: 0.15rem;
+  letter-spacing: 0.15rem;
+}
+

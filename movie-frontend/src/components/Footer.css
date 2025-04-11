@@ -1,0 +1,130 @@
+/* Dark Theme Variables */
+:root {
+    --dark-bg: #000000;
+    --darker-bg: #0a0a0c;
+    --accent: #e50914;
+    --text-primary: #f5f5f5;
+    --text-secondary: #b3b3b3;
+    --border-dark: #2a2a2e;
+  }
+  
+  .dark-footer {
+    background-color: var(--dark-bg);
+    color: var(--text-primary);
+    padding: 4rem 0 2rem;
+    border-top: 1px solid var(--border-dark);
+  }
+  
+  .dark-footer .cs-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2.5rem;
+    padding: 0 1.5rem;
+  }
+  
+  .dark-footer .cs-logo-group {
+    grid-column: 1 / -1;
+  }
+  
+  .dark-footer .brand-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: white
+  }
+  
+  .dark-footer .cs-text {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    max-width: 400px;
+  }
+  
+  .dark-footer .contact-info {
+    margin-bottom: 1.5rem;
+  }
+  
+  .dark-footer .contact-email {
+    color: var(--text-secondary);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s;
+  }
+  
+  .dark-footer .contact-email:hover {
+    color: var(--accent);
+  }
+  
+  .dark-footer .social-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .dark-footer .social-links a {
+    color: var(--text-secondary);
+    font-size: 1.25rem;
+    transition: color 0.3s;
+  }
+  
+  .dark-footer .social-links a:hover {
+    color: var(--accent);
+  }
+  
+ 
+  .dark-footer .cs-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dark-footer .cs-header {
+    display: block;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 1.25rem;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .dark-footer .cs-nav-li {
+    margin-bottom: 0.75rem;
+  }
+  
+  .dark-footer .cs-nav-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 0.95rem;
+  }
+  
+  .dark-footer .cs-nav-link:hover {
+    color: var(--accent);
+  }
+  
+  .dark-footer .cs-bottom {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-dark);
+    text-align: center;
+  }
+  
+  .dark-footer .cs-copyright {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+  }
+  
+  /* Responsive */
+  @media (min-width: 768px) {
+    .dark-footer .cs-logo-group {
+      grid-column: auto;
+    }
+    
+    .dark-footer .cs-container {
+      grid-template-columns: 2fr repeat(3, 1fr);
+    }
+  }

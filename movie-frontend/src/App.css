@@ -1,0 +1,26 @@
+/* App.css */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+/* Watchlist protection */
+.watchlist-page {
+  position: relative;
+  z-index: 2;
+}
+
+/* TrendingNow isolation */
+.trending-section {
+  position: relative;
+  z-index: 1;
+  contain: content;
+  margin: 2rem 0;
+}

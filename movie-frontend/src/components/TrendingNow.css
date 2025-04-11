@@ -1,0 +1,84 @@
+
+/* TrendingNow.css */
+.trending-section {
+  padding: 20px 4%;
+  background: #0D0D0D;
+  position: relative;
+}
+
+.section-title {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.scroll-container {
+  position: relative;
+}
+
+.movie-row {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 10px 0;
+}
+
+.movie-row::-webkit-scrollbar {
+  display: none;
+}
+
+.movie-card {
+  min-width: 150px;
+  transition: transform 0.2s;
+}
+
+.movie-card:hover {
+  transform: scale(1.1);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 225px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.movie-info {
+  padding: 8px 0;
+}
+
+.movie-info h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: white;
+}
+
+.movie-info p {
+  margin: 5px 0 0;
+  color: #aaa;
+  font-size: 0.8rem;
+}
+
+.scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: rgba(0,0,0,0.7);
+  border: none;
+  color: white;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.scroll-arrow.left {
+  left: 10px;
+}
+
+.scroll-arrow.right {
+  right: 10px;
+}

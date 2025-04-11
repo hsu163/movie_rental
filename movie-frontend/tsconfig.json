@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+   "jsx": "react-jsx",
+   "lib": ["ES2015", "DOM"],
+    "types": ["framer-motion"],
+    "skipLibCheck": true
+  },
+  "include": ["src"]
+}
